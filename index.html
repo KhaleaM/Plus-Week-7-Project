@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 7 Project</title>
     <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,15 +15,15 @@
     <div class="container">
         <div>
             <header>
-                <form class="search-form">
-                    <input type="search" placeholder="Enter a City..." class="search-form-input">
+                <form class="search-form" id="search-form">
+                    <input type="search" placeholder="Enter a City..." required id="search-form-input" class="search-form-input">
                     <input type="search" value="Search" class="search-form-button">
                 </form>
             </header>
             <main>
                 <div class="weather-app-data">
                     <div>
-                        <h1 class="weather-app-city">Paris</h1>
+                        <h1 class="weather-app-city" id="city">Paris</h1>
                         <p class="weather-app-details">
                             Tuesday 16:24, Cloudy
                             <br />
