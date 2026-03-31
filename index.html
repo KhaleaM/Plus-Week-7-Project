@@ -8,16 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div>
             <header>
                 <form class="search-form" id="search-form">
-                    <input type="search" placeholder="Enter a City..." required id="search-form-input" class="search-form-input">
-                    <input type="search" value="Search" class="search-form-button">
+                    <input type="search" placeholder="Enter a City..." required id="search-form-input" class="search-form-input" />
+                    <input type="search" value="Search" class="search-form-button" />
                 </form>
             </header>
             <main>
@@ -25,9 +24,9 @@
                     <div>
                         <h1 class="weather-app-city" id="city">Paris</h1>
                         <p class="weather-app-details">
-                            Tuesday 16:24, Cloudy
+                            <span id="time"></span> <span id="description">Cloudy</span>
                             <br />
-                            Humidity: <strong>66%</strong>, Wind: <strong> 3.13 km/h</strong>
+                            Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
                         </p>
                     </div>
                     <div class="weather-app-temperature-container">
@@ -37,9 +36,7 @@
                     </div>
                 </div>
         </div>
-        <script src="src/script.js">
-
-        </script>
+        <script src="src/index.js"></script>
         </main>
         <footer>
             Coded by <a href="https://www.shecodes.io/graduates/182572-khalea-mitchell" target="_blank">Khalea</a> and is on <a
